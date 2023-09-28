@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1E2C3E;
+    line-height: 1.5;
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #0D0D1A;
+    color: whitesmoke;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-width: medium;
+    border-color: black;
+    padding: 15px 30px 15px 30px;
+    gap: 15px;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+
+.mainLogo {
+    width: 60px;
+    height: 60px;
+}
+
+.titleMain {
+    color: whitesmoke;
+    font-size: 72px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.naviMenu {
+    text-align: right;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.naviMenu img {
+    width: 60px;
+    height: 60px;
+}
+
+.naviMenu ul {
+    list-style-type: none;
+}
+
+.naviMenu ul li a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.newsDiv {
+    margin: 0%;
+    padding-bottom: 25px;
+    color: whitesmoke
+}
+
+.newsDiv img {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.newsDiv h2 {
+    color: whitesmoke;
+    font-size: 62px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.body {
+    color: whitesmoke;
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+}
+
+.titleSection {
+    text-transform: uppercase;
+    color: goldenrod;
+    text-align: center;
+    font-size: 62px;
+}
+
+.divCarousel {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+.divCarousel img {
+    height: 28vw;
+    width: 20vw;
+    padding-top: 20px;
+}
+
+.topElement {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+    color: whitesmoke;
+}
+
+.textMain {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.sagaSelector {
+    font-size: 42px;
+    text-align: center;
+}
+
+.bottomElement {
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 250px;
+    color: whitesmoke;
+}
+
+.onlyElement {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 250px;
+    color: whitesmoke;
+}
+
+.aboutUs {
+    background-image: url(../assets/img/team3.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-weight: 400;
+}
+
+form {
+    margin: auto;
+    font-size: 22px;
+    border: 5px solid black;
+    background-color: #0D0D1A;
+    width: 97%;
+    padding: 20px;
+    padding-bottom: 35px;
+    border-radius: 30px;
+}
+
+form h2 {
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+}
+
+.formInput {
+    width: 100%;
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    border-radius: 2px;
+    font-family: 'Kanit', sans-serif;
+    resize: none;
+}
+
+.formSend {
+    border: #1E2C3E solid 3px;
+    border-radius: 10px;
+    width: 15%;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: goldenrod;
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+    font-family: 'Kanit', sans-serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D0D1A;
+    color: whitesmoke;
+    text-align: right;
+    font-size: 18px;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.socialLogo {
+    width: 20px;
+    height: 20px;
+}
