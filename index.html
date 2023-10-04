@@ -31,59 +31,146 @@
     </header>
     
     <main>
-        <section class="newsDiv"> <!--Esto será un carrusel con noticias que ocupe todo el ancho de la pantalla-->
-            <img src="./assets/img/bannernoticias_yumi.jpg" alt="Portada del libro con el autor"> 
-            <h2>¡"Yumi y el Pintor de Pesadillas" ya está aquí!</h2>
-        </section>
-        <section class="body">
+        <div id="newsDiv" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#newsDiv" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#newsDiv" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#newsDiv" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/bannernoticias_yumi.jpg" alt="Portada del libro con el autor" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>¡"Yumi y el Pintor de Pesadillas" ya está aquí!</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/bannernoticias_sos.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>"The State of Sanderson" 2023!</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets//img//bannernoticias_audible.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>¡Audible se niega a publicar esto!</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsDiv" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsDiv" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="homeBody">
             <h2 class="titleSection">Cosmere</h2>
-            <article class="divCarousel"><!--Este será un carrusel con libros del cosmere-->
-                <img src="./assets/img/cosmere_elantris.jpg" alt="Portada del Libro Elantris">
-                <img src="./assets/img/cosmere_mistborn1.jpg" alt="Portada del Libro El Imperio Final">
-                <img src="./assets/img/cosmere_mistborn2.jpg" alt="Portada del Libro El Pozo de la Ascención">
-                <img src="./assets/img/cosmere_mistborn3.jpg" alt="Portada del Libro El Heroe de las Eras">
-                <img src="./assets/img/cosmere_mistborn4.jpg" alt="Portada del Libro Aleación de Ley">
-                <img src="./assets/img/cosmere_mistborn5.jpg" alt="Portada del Libro Sombras de Identidad">
-                <img src="./assets/img/cosmere_mistborn6.jpg" alt="Portada del Libro Brazales de Duelo">
-                <img src="./assets/img/cosmere_mistborn7.jpg" alt="Portada del Libro El Metal Perdido">
-                <img src="./assets/img/cosmere_archivo1.jpg" alt="Portada del Libro El Camino de los Reyes">
-                <img src="./assets/img/cosmere_archivo2.jpg" alt="Portada del Libro Palabras Radiantes">
-                <img src="./assets/img/cosmere_archivo3.jpg" alt="Portada del Libro Juramentada">
-                <img src="./assets/img/cosmere_archivo4.jpg" alt="Portada del Libro El Ritmo de la Guerra">
-                <img src="./assets/img/cosmere_aliento.jpg" alt="Portada del Libro El Aliento de los Dioses">
-                <img src="./assets/img/cosmere_tress.jpg" alt="Portada del Libro Trenza del Mar Esmeralda">
-                <img src="./assets/img/cosmere_yumi.jpg" alt="Portada del Libro Yumi y el Pintor de Pesadillas">
-                <img src="./assets/img/cosmere_arena1.jpg" alt="Portada del Libro Arena Blanca 1">
-                <img src="./assets/img/cosmere_arena2.jpg" alt="Portada del Libro Arena Blanca 2">
-                <img src="./assets/img/cosmere_arcanum.jpg" alt="Portada del Libro Arcanum Ilimitado">
-            </article>
+            <div class="container-fluid">
+                <div id="cosmereCarousel" class="carousel slide bookCarousel" data-bs-ride="carousel" data-bs-interval="7000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex">
+                                <img src="./assets/img/cosmere_elantris.jpg" alt="Portada del Libro Elantris" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_mistborn1.jpg" alt="Portada del Libro El Imperio Final" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_mistborn2.jpg" alt="Portada del Libro El Pozo de la Ascención" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_mistborn3.jpg" alt="Portada del Libro El Heroe de las Eras" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/cosmere_mistborn4.jpg" alt="Portada del Libro Aleación de Ley" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_mistborn5.jpg" alt="Portada del Libro Sombras de Identidad" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_mistborn6.jpg" alt="Portada del Libro Brazales de Duelo" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_mistborn7.jpg" alt="Portada del Libro El Metal Perdido" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/cosmere_archivo1.jpg" alt="Portada del Libro El Camino de los Reyes" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_archivo2.jpg" alt="Portada del Libro Palabras Radiantes" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_archivo3.jpg" alt="Portada del Libro Juramentada" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_archivo4.jpg" alt="Portada del Libro El Ritmo de la Guerra" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/cosmere_aliento.jpg" alt="Portada del Libro El Aliento de los Dioses" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_tress.jpg" alt="Portada del Libro Trenza del Mar Esmeralda" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_yumi.jpg" alt="Portada del Libro Yumi y el Pintor de Pesadillas" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/cosmere_arena1.jpg" alt="Portada del Libro Arena Blanca 1" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cosmereCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cosmereCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
         </section>
-        <section class="bottomElement">
+        <section class="bottomHome">
             <h2 class="titleSection">Otros Trabajos</h2>
-            <article class="divCarousel"><!--Otro carrusel con libros fuera del cosmere-->
-                <img src="./assets/img/alcatraz1.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados">
-                <img src="./assets/img/alcatraz2.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: Los Huesos del Escriba">
-                <img src="./assets/img/alcatraz3.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: Los Caballeros de Cristalia">
-                <img src="./assets/img/alcatraz4.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: Las Lentes Fragmentadas">
-                <img src="./assets/img/alcatraz5.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: El Talento Oscuro">
-                <img src="./assets/img/citoverso1.jpg" alt="Portada del Libro La Defensa de Eliseo">
-                <img src="./assets/img/citoverso2.jpg" alt="Portada del Libro Escuadrón">
-                <img src="./assets/img/citoverso3.jpg" alt="Portada del Libro Estelar">
-                <img src="./assets/img/citoverso4.jpg" alt="Portada del Libro Escuadrón Cielo">
-                <img src="./assets/img/citoverso5.jpg" alt="Portada del Libro Citónica">
-                <img src="./assets/img/reckoners1.jpg" alt="Portada del Libro Steelheart">
-                <img src="./assets/img/reckoners2.jpg" alt="Portada del Libro Mitosis">
-                <img src="./assets/img/reckoners3.jpg" alt="Portada del Libro Firefight">
-                <img src="./assets/img/reckoners4.jpg" alt="Portada del Libro Calamity">
-                <img src="./assets/img/standalone1.jpg" alt="Portada del Libro Legión">
-                <img src="./assets/img/standalone2.jpg" alt="Portada del Libro La Guía del Mago Frugal para Sobrevivir en la Inglaterra del Medievo">
-                <img src="./assets/img/standalone3.jpg" alt="Portada del Libro El Rithmaista">
-                <img src="./assets/img/standalone4.jpg" alt="Portada del Libro La Espada Infinita: El Despertar">
-                <img src="./assets/img/standalone5.jpg" alt="Portada del Libro La Espada Infinita: Redención">
-                <img src="./assets/img/rueda13.jpg" alt="Portada del Libro La Rueda del Tiempo: La Tormenta">
-                <img src="./assets/img/rueda14.jpg" alt="Portada del Libro La Rueda del Tiempo: Torres de Medianoche">
-                <img src="./assets/img/rueda15.jpg" alt="Portada del Libro La Rueda del Tiempo: Un Recuerdo de Luz">
-            </article>
+            <div class="container-fluid">
+                <div id="otrosCarousel" class="carousel slide bookCarousel" data-bs-ride="carousel" data-bs-interval="8000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex">
+                                <img src="./assets/img/alcatraz1.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/alcatraz2.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: Los Huesos del Escriba" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/alcatraz3.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: Los Caballeros de Cristalia" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/alcatraz4.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: Las Lentes Fragmentadas" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/alcatraz5.png" alt="Portada del Libro Alcatraz contra los Bibliotecarios Malvados: El Talento Oscuro" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/citoverso1.jpg" alt="Portada del Libro La Defensa de Eliseo" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/citoverso2.jpg" alt="Portada del Libro Escuadrón" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/citoverso3.jpg" alt="Portada del Libro Estelar" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/citoverso4.jpg" alt="Portada del Libro Escuadrón Cielo" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/citoverso5.jpg" alt="Portada del Libro Citónica" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/reckoners1.jpg" alt="Portada del Libro Steelheart" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/reckoners2.jpg" alt="Portada del Libro Mitosis" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/reckoners3.jpg" alt="Portada del Libro Firefight" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/reckoners4.jpg" alt="Portada del Libro Calamity" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/standalone1.jpg" alt="Portada del Libro Legión" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/standalone2.jpg" alt="Portada del Libro La Guía del Mago Frugal para Sobrevivir en la Inglaterra del Medievo" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="./assets/img/standalone3.jpg" alt="Portada del Libro El Rithmaista" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/standalone4.jpg" alt="Portada del Libro La Espada Infinita: El Despertar" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/standalone5.jpg" alt="Portada del Libro La Espada Infinita: Redención" class="w-25 img-fluid d-block">
+                                <img src="./assets/img/rueda13.jpg" alt="Portada del Libro La Rueda del Tiempo: La Tormenta" class="w-25 img-fluid d-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#otrosCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#otrosCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 

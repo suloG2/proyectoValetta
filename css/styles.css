@@ -22,6 +22,7 @@ header {
     position: sticky;
     top: 0px;
     align-items: center;
+    z-index: 5000;
 }
 
 .mainLogo {
@@ -45,6 +46,10 @@ header {
 .naviMenu button {
     background-color: inherit;
     border: none;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #0D0D1A;
 }
 
 .naviMenu button:hover {
@@ -75,55 +80,49 @@ header {
     background-color: goldenrod;
 }
 
-.newsDiv {
-    margin: 0%;
-    padding-bottom: 25px;
-    color: whitesmoke
-}
-
-.newsDiv img {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-}
-
-.newsDiv h2 {
+.carousel-caption h2 {
     color: whitesmoke;
-    font-size: 62px;
-    margin-left: 100px;
-    margin-right: auto;
+    font-size: 50px;
 }
 
-.body {
+.homeBody {
     color: whitesmoke;
-    padding-top: 25px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-top: 75px;
     padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .titleSection {
     text-transform: uppercase;
+    font-weight: bolder;
     color: goldenrod;
     text-align: center;
     font-size: 62px;
 }
 
-.divCarousel {
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    justify-content: center;
+.bookCarousel {
+    background-color: #0D0D1A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #0D0D1A;
     align-items: center;
-    gap: 3vw;
-    margin-top: 1vw;
-    margin-bottom: 3vw;
 }
 
-.divCarousel img {
+.bookCarousel img {
     height: 28vw;
     width: 20vw;
-    padding-top: 20px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.bottomHome {
+    padding-top: 100px;
+    padding-bottom: 250px;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .topElement {
@@ -139,9 +138,33 @@ header {
     font-size: 22px;
 }
 
+.body {
+    color: whitesmoke;
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+}
+
 .sagaSelector {
-    font-size: 42px;
+    font-size: 30px;
     text-align: center;
+    background-color: #0D0D1A;
+    border-color: #0D0D1A;
+}
+
+.sagaSelectItem {
+    background-color: #0D0D1A;
+    font-size: 20px;
+}
+
+.sagaSelectItem li a {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.sagaSelectItem li a:active {
+    background-color: goldenrod;
 }
 
 .bottomElement {

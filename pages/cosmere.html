@@ -35,26 +35,50 @@
             <h2 class="titleSection">¿Qué es el Cosmere?</h2>
             <p class="textMain">Se trata de un universo ficticio compartido a lo largo de muchas de las obras de Brandon Sanderson. <br>Si bien la mayoria de sus libros/sagas pueden ser leidos de forma individual, se recomienda seguir un orden de lectura particular para no perder ningun detalle o pequeño hilo de la gran historia que engloba todo el resto. <br> Con inicios en Elantris en 2005, cuenta actualmente con dos sagas principales, ademas de varios standalones los cuales podrían convertirse en sus propias sagas en el futuro, y una saga de novelas graficas titulada "Arena Blanca".</p>
         </section>
-        <section class="body">
+        <section class="homeBody">
             <h2 class="titleSection">Sagas del Cosmere</h2>
-            <article><!--Menu desplegable de las sagas del cosmere. Al seleccionar una opción se muestra la información correspondiente al tema seleccionado y el resto se ocultan. Usar hidden?-->
-                <div class="sagaSelector">Nacidos de la Bruma</div>
-                <ul class="textMain">
-                    <li>El Archivo de las Tormentas</li>
-                    <li>Arena Blanca</li>
-                    <li>Standalones</li>
+            <div class="dropdown d-flex">
+                <div class="col-md-4"></div>
+                <button class="btn btn-secondary dropdown-toggle sagaSelector col-md-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nacidos de la Bruma
+                </button>
+                <ul class="dropdown-menu sagaSelectItem col-md-4">
+                    <li><a class="dropdown-item" href="#">El Archivo de las Tormentas</a></li>
+                    <li><a class="dropdown-item" href="#">Standalones y variedad</a></li>
                 </ul>
-            </article>
-            <article><!--Aquí irá información de la saga seleccionada-->
+                <div class="col-md-4"></div>
+            </div>
+            <article>
                 <p class="textMain">Nacidos de la Bruma es una saga de fantasía ambientada en Scadrial, un mundo del Cosmere en el cual existen varios sistemas de magia, todos centrados alrededor de diversos metales y las diversas formas de interactuar con ellos.<br>La trama de los libros pertenecientes a esta saga contiene grandes cantidades de intriga politica, personajes profundos y mucha acción.</p>
-                <div class="divCarousel"><!--Un carrusel con los diferentes libros de la saga seleccionada-->
-                    <img src="../assets/img/cosmere_mistborn1.jpg" alt="Portada del Libro El Imperio Final">
-                    <img src="../assets/img/cosmere_mistborn2.jpg" alt="Portada del Libro El Pozo de la Ascención">
-                    <img src="../assets/img/cosmere_mistborn3.jpg" alt="Portada del Libro El Heroe de las Eras">
-                    <img src="../assets/img/cosmere_mistborn4.jpg" alt="Portada del Libro Aleación de Ley">
-                    <img src="../assets/img/cosmere_mistborn5.jpg" alt="Portada del Libro Sombras de Identidad">
-                    <img src="../assets/img/cosmere_mistborn6.jpg" alt="Portada del Libro Brazales de Duelo">
-                    <img src="../assets/img/cosmere_mistborn7.jpg" alt="Portada del Libro El Metal Perdido">
+                <div class="container-fluid">
+                    <div id="mistbornCarousel" class="carousel slide bookCarousel" data-bs-ride="carousel" data-bs-interval="8000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex">
+                                    <img src="../assets/img/cosmere_mistborn1.jpg" alt="Portada del Libro El Imperio Final" class="w-25 img-fluid d-block">
+                                    <img src="../assets/img/cosmere_mistborn2.jpg" alt="Portada del Libro El Pozo de la Ascención" class="w-25 img-fluid d-block">
+                                    <img src="../assets/img/cosmere_mistborn3.jpg" alt="Portada del Libro El Héroe de las Eras" class="w-25 img-fluid d-block">
+                                    <img src="../assets/img/cosmere_mistborn4.jpg" alt="Portada del Libro Aleación de Ley" class="w-25 img-fluid d-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <img src="../assets/img/cosmere_mistborn5.jpg" alt="Portada del Libro Sombras de Identidad" class="w-25 img-fluid d-block">
+                                    <img src="../assets/img/cosmere_mistborn6.jpg" alt="Portada del Libro Brazales de Duelo" class="w-25 img-fluid d-block">
+                                    <img src="../assets/img/cosmere_mistborn7.jpg" alt="Portada del Libro El Metal Perdido" class="w-25 img-fluid d-block">
+                                    <img src="../assets/img/cosmere_mistborn1.jpg" alt="Portada del Libro El Imperio Final" class="w-25 img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mistbornCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mistbornCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
                 </div>
             </article>
         </section>
