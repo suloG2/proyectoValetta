@@ -126,52 +126,11 @@ header {
 }
 
 .topElement {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 25px;
-    color: whitesmoke;
-}
-
-.textMain {
-    text-align: justify;
-    font-size: 22px;
-}
-
-.body {
-    color: whitesmoke;
+    margin-top: 50px;
     padding-top: 25px;
     padding-left: 75px;
     padding-right: 75px;
     padding-bottom: 25px;
-}
-
-.sagaSelector {
-    font-size: 30px;
-    text-align: center;
-    background-color: #0D0D1A;
-    border-color: #0D0D1A;
-}
-
-.sagaSelectItem {
-    background-color: #0D0D1A;
-    font-size: 20px;
-}
-
-.sagaSelectItem li a {
-    color: whitesmoke;
-    text-align: center;
-}
-
-.sagaSelectItem li a:active {
-    background-color: goldenrod;
-}
-
-.bottomElement {
-    padding-top: 25px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 250px;
     color: whitesmoke;
 }
 
@@ -181,21 +140,6 @@ header {
     padding-right: 75px;
     padding-bottom: 250px;
     color: whitesmoke;
-}
-
-.aboutUs {
-    background-image: url(../assets/img/team3.jpg);
-    background-size: cover;
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 75px;
-    color: whitesmoke;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-weight: 400;
 }
 
 .generalNews {
@@ -254,6 +198,130 @@ header {
 
 .newsContainer:hover img {
     filter: blur(1px); 
+}
+
+.cosmereSagas {
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: #2f415a;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textArea {
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+.whatisCosmere {
+    background-image: url(../assets/img/backCosmere.jpg);
+    border: none;
+    border-radius: 15px;
+    border-width: 3px;
+}
+
+.textArea p {
+    text-align: center;
+    line-height: 37px;
+}
+
+.textareaCarousel {
+    text-align: center;
+    line-height: 37px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    font-size: 22px;
+}
+
+.textMain {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.body {
+    color: whitesmoke;
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+}
+
+.sagaSelector {
+    font-size: 30px;
+    text-align: center;
+    background-color: #0D0D1A;
+    border-color: #0D0D1A;
+}
+
+.sagaSelectItem {
+    background-color: #0D0D1A;
+    font-size: 20px;
+}
+
+.sagaSelectItem li a {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.sagaSelectItem li a:active {
+    background-color: goldenrod;
+}
+
+.bottomElement {
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 250px;
+    color: whitesmoke;
+}
+
+.bottomElement h2 {
+    margin-top: 50px;
+}
+
+.readOrder {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    border: solid whitesmoke;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+.bottomMargin {
+    margin-bottom: 80px;
+}
+
+.titleSpace {
+    padding-bottom: 30px;
+}
+
+.lastElement {
+    margin-bottom: 250px;
+}
+
+.aboutUs {
+    background-image: url(../assets/img/team3.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-weight: 400;
 }
 
 form {
