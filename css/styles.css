@@ -180,6 +180,10 @@ header {
   width: 20vw;
   margin-right: 2vw;
   margin-left: 2vw;
+  transition: transform 0.2s;
+}
+.bookCarousel img:hover {
+  transform: scale(1.02);
 }
 
 .bottomHome {
@@ -338,6 +342,10 @@ header {
   border: solid whitesmoke;
   border-width: 3px;
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+.readOrder:hover {
+  transform: scale(1.1);
 }
 
 .bottomMargin {
