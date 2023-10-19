@@ -1,754 +1,389 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: #1E2C3E;
-    line-height: 1.5;
-    font-family: 'Kanit', sans-serif;
+  background-color: #1E2C3E;
 }
 
 header {
-    display: flex;
-    background-color: #0D0D1A;
-    color: whitesmoke;
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-width: medium;
-    border-color: black;
-    padding: 15px 30px 15px 30px;
-    gap: 15px;
-    position: sticky;
-    top: 0px;
-    align-items: center;
-    z-index: 5000;
+  display: flex;
+  background-color: #0D0D1A;
+  color: whitesmoke;
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding: 5px 10px 5px 10px;
+  gap: 15px;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  z-index: 5000;
 }
 
 .mainLogo {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .titleMain {
-    color: whitesmoke;
-    font-size: 72px;
-    text-decoration: none;
-    font-weight: 400;
+  color: goldenrod;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 62px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: whitesmoke;
+  font-size: 72px;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .naviMenu {
-    text-align: right;
-    margin-right: 0px;
-    margin-left: auto;
+  text-align: right;
+  margin-right: 0px;
+  margin-left: auto;
 }
-
 .naviMenu button {
-    background-color: inherit;
-    border: none;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: #0D0D1A;
+  background-color: inherit;
+  border: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #0D0D1A;
 }
-
 .naviMenu button:hover {
-    background-color: inherit;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: whitesmoke;
+  background-color: inherit;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+}
+.naviMenu button img {
+  width: 60px;
+  height: 60px;
+}
+.naviMenu div a {
+  background-color: whitesmoke;
+  text-align: right;
+  --bs-dropdown-link-active-bg: goldenrod;
+}
+.naviMenu div a:hover {
+  background-color: goldenrod;
 }
 
 .btn-primary {
-    --bs-btn-active-bg: inherit;
-    --bs-btn-active-border-color: inherit;
-}
-
-.naviMenu button img {
-    width: 60px;
-    height: 60px;
-}
-
-.naviMenu div a {
-    background-color: whitesmoke;
-    text-align: right;
-    --bs-dropdown-link-active-bg: goldenrod;
-}
-
-.naviMenu div a:hover {
-    background-color: goldenrod;
+  --bs-btn-active-bg: inherit;
+  --bs-btn-active-border-color: inherit;
 }
 
 .carousel-caption h2 {
-    color: whitesmoke;
-    font-size: 50px;
+  color: whitesmoke;
+  font-size: 50px;
 }
 
-.homeBody {
-    color: whitesmoke;
-    padding-top: 75px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+.homeBody, .bottomHome {
+  color: whitesmoke;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .titleSection {
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: goldenrod;
-    text-align: center;
-    font-size: 62px;
+  color: goldenrod;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 62px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .bookCarousel {
-    background-color: #0D0D1A;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 15px;
-    border-color: #0D0D1A;
-    align-items: center;
+  background-color: #0D0D1A;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color: #0D0D1A;
+  align-items: center;
 }
-
 .bookCarousel img {
-    height: 28vw;
-    width: 20vw;
-    margin-right: 2vw;
-    margin-left: 2vw;
+  height: 28vw;
+  width: 20vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 .bottomHome {
-    padding-top: 100px;
-    padding-bottom: 250px;
-    color: whitesmoke;
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+
+.onlyElement, .aboutUs, .bottomElement, .topElement {
+  padding-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 250px;
+  color: whitesmoke;
 }
 
 .topElement {
-    margin-top: 50px;
-    padding-top: 25px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 25px;
-    color: whitesmoke;
-}
-
-.onlyElement {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 250px;
-    color: whitesmoke;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .generalNews {
-    background-color: #0D0D1A;
-    border: solid;
-    border-width: 4px;
-    border-color: whitesmoke;
-    border-radius: 4vw;
-    margin-top: 30px;
+  background-color: #0D0D1A;
+  border: solid;
+  border-width: 4px;
+  border-color: whitesmoke;
+  border-radius: 4vw;
+  margin-top: 30px;
 }
 
 .middleGround {
-    height: 2.2vw;
+  height: 2.2vw;
 }
 
 .newsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.newsContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  border: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 0.6vw;
+  transition: filter 0.3s ease;
+}
+.newsContainer:hover .image-text {
+  opacity: 1;
+}
+.newsContainer:hover img {
+  filter: blur(1px);
 }
 
 .image-text {
-    text-align: center;
+  text-align: center;
 }
 
 .newsContainer .image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    background-color: black; 
-    color: white;
-    padding: 10px; 
-    border-radius: 5px;
-    transition: opacity 0.3s;
-}
-
-.newsContainer:hover .image-text {
-    opacity: 1;
-}
-
-.newsContainer img {
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-    border: solid;
-    border-width: 3px;
-    border-color: black;
-    border-radius: 0.6vw;
-    transition: filter 0.3s ease;
-}
-
-.newsContainer:hover img {
-    filter: blur(1px); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
 }
 
 .cosmereSagas {
-    border-style: solid;
-    border-color: whitesmoke;
-    background-color: #2f415a;
-    border-width: 3px;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  border-style: solid;
+  border-color: whitesmoke;
+  background-color: #2f415a;
+  border-width: 3px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .textArea {
-    margin-right: 15vw;
-    margin-left: 15vw;
+  margin-right: 15vw;
+  margin-left: 15vw;
+}
+.textArea p {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
 }
 
 .whatisCosmere {
-    background-image: url(../assets/img/backCosmere.jpg);
-    border: none;
-    border-radius: 15px;
-    border-width: 3px;
-}
-
-.textArea p {
-    text-align: center;
-    line-height: 1.5;
+  background-image: url(../assets/img/backCosmere.jpg);
+  border: none;
+  border-radius: 15px;
+  border-width: 3px;
 }
 
 .textareaCarousel {
-    text-align: center;
-    line-height: 37px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 15vw;
-    margin-left: 15vw;
-    font-size: 22px;
-}
-
-.textMain {
-    text-align: justify;
-    font-size: 22px;
-}
-
-.body {
-    color: whitesmoke;
-    padding-top: 25px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
 }
 
 .sagaSelector {
-    font-size: 30px;
-    text-align: center;
-    background-color: #0D0D1A;
-    border-color: #0D0D1A;
+  font-size: 30px;
+  text-align: center;
+  background-color: #0D0D1A;
+  border-color: #0D0D1A;
 }
 
 .sagaSelectItem {
-    background-color: #0D0D1A;
-    font-size: 20px;
+  background-color: #0D0D1A;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
 }
-
 .sagaSelectItem li a {
-    color: whitesmoke;
-    text-align: center;
+  color: whitesmoke;
+  text-align: center;
 }
-
 .sagaSelectItem li a:active {
-    background-color: goldenrod;
+  background-color: goldenrod;
 }
 
 .bottomElement {
-    padding-top: 25px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 250px;
-    color: whitesmoke;
+  padding-top: 25px;
+  padding-bottom: 250px;
 }
-
 .bottomElement h2 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .readOrder {
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
-    border: solid whitesmoke;
-    border-width: 3px;
-    border-radius: 10px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  border: solid whitesmoke;
+  border-width: 3px;
+  border-radius: 10px;
 }
 
 .bottomMargin {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .titleSpace {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .lastElement {
-    margin-bottom: 250px;
+  margin-bottom: 250px;
 }
 
 .aboutUs {
-    background-image: url(../assets/img/team3.jpg);
-    background-size: cover;
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 75px;
-    color: whitesmoke;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-weight: 400;
+  background-image: url(../assets/img/team3.jpg);
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 15px;
+  font-weight: 400;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
 }
 
 form {
-    margin: auto;
-    font-size: 22px;
-    border: 5px solid black;
-    background-color: #0D0D1A;
-    width: 97%;
-    padding: 20px;
-    padding-bottom: 35px;
-    border-radius: 30px;
+  margin: auto;
+  font-size: 22px;
+  border: 5px solid black;
+  background-color: #0D0D1A;
+  width: 97%;
+  padding: 20px;
+  padding-bottom: 35px;
+  border-radius: 30px;
 }
-
 form h2 {
-    text-transform: uppercase;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 50px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
 }
 
 .formInput {
-    width: 100%;
-    color: whitesmoke;
-    margin-top: 10px;
-    font-size: 22px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid goldenrod;
-    border-radius: 2px;
-    font-family: 'Kanit', sans-serif;
-    resize: none;
+  width: 100%;
+  color: whitesmoke;
+  margin-top: 10px;
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid goldenrod;
+  border-radius: 2px;
+  font-family: "Kanit", sans-serif;
+  resize: none;
 }
 
 .formSend {
-    border: #1E2C3E solid 3px;
-    border-radius: 10px;
-    width: 15%;
-    margin-top: 10px;
-    font-size: 22px;
-    background-color: goldenrod;
-    display: block;
-    margin-right: 0px;
-    margin-left: auto;
-    font-family: 'Kanit', sans-serif;
+  border: #1E2C3E solid 3px;
+  border-radius: 10px;
+  width: 15%;
+  margin-top: 10px;
+  font-size: 22px;
+  background-color: goldenrod;
+  display: block;
+  margin-right: 0px;
+  margin-left: auto;
+  font-family: "Kanit", sans-serif;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #0D0D1A;
-    color: whitesmoke;
-    text-align: right;
-    font-size: 18px;
-    border-style: solid;
-    border-width: medium;
-    border-color: black;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0D0D1A;
+  color: whitesmoke;
+  text-align: right;
+  font-size: 18px;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  font-family: "Kanit", sans-serif;
 }
-
 footer h3 {
-    font-size: 24px;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
+  text-align: inherit;
 }
-
 footer p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
-
 footer a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .socialLogo {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-@media screen and (max-width: 1080px) {
-    .sagaSelector {
-        font-size: 15px;
-    }
-    
-    .sagaSelectItem {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 770px) {
-    header {
-        padding: 7px 15px 7px 15px;
-        gap: 7px;
-    }
-
-    .mainLogo {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .titleMain {
-        font-size: 36px;
-    }
-    
-    .naviMenu button img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .carousel-caption h2 {
-        font-size: 25px;
-    }
-    
-    .homeBody {
-        padding-top: 37px;
-        padding-bottom: 12px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .titleSection {
-        font-size: 31px;
-    }
-    
-    .bottomHome {
-        padding-top: 50px;
-        padding-bottom: 125px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .topElement {
-        margin-top: 25px;
-        padding-top: 12px;
-        padding-left: 37px;
-        padding-right: 37px;
-        padding-bottom: 12px;
-    }
-    
-    .onlyElement {
-        padding-top: 25px;
-        padding-left: 37px;
-        padding-right: 37px;
-        padding-bottom: 125px;
-    }
-    
-    .generalNews {
-        margin-top: 15px;
-    }
-    
-    .newsContainer .image-text {
-        padding: 5px; 
-    }
-
-    .cosmereSagas {
-        margin-top: 25px;
-        margin-left: 3px;
-        margin-right: 3px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    
-    .textareaCarousel {
-        line-height: 18px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 11px;
-    }
-    
-    .textMain {
-        font-size: 11px;
-    }
-    
-    .body {
-        padding-top: 12px;
-        padding-left: 37px;
-        padding-right: 37px;
-        padding-bottom: 12px;
-    }
-    
-    .bottomElement {
-        padding-top: 12px;
-        padding-left: 37px;
-        padding-right: 37px;
-        padding-bottom: 125px;
-    }
-    
-    .bottomElement h2 {
-        margin-top: 25px;
-    }
-    
-    .readOrder {
-        margin-top: 15px;
-    }
-    
-    .bottomMargin {
-        margin-bottom: 40px;
-    }
-    
-    .titleSpace {
-        padding-bottom: 15px;
-    }
-    
-    .lastElement {
-        margin-bottom: 125px;
-    }
-    
-    .aboutUs {
-        padding-top: 25px;
-        padding-left: 37px;
-        padding-right: 37px;
-        padding-bottom: 37px;
-        margin-top: 25px;
-        margin-left: 50px;
-        margin-right: 50px;
-        border-radius: 7px;
-    }
-    
-    form {
-        font-size: 11px;
-        padding: 10px;
-        padding-bottom: 17px;
-    }
-    
-    form h2 {
-        font-size: 25px;
-    }
-    
-    .formInput {
-        margin-top: 5px;
-        font-size: 16px;
-    }
-    
-    .formSend {
-        margin-top: 5px;
-        font-size: 11px;
-    }
-    
-    footer {
-        font-size: 12px;
-        padding-top: 25px;
-        padding-right: 15px;
-        padding-bottom: 7px;
-    }
-    
-    footer h3 {
-        font-size: 18px;
-    }
-    
-    .socialLogo {
-        width: 15px;
-        height: 15px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .sagaSelector {
-        font-size: 7px;
-    }
-    
-    .sagaSelectItem {
-        font-size: 5px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    header {
-        padding: 3px 7px 3px 7px;
-        gap: 3px;
-    }
-
-    .mainLogo {
-        width: 15px;
-        height: 15px;
-    }
-    
-    .titleMain {
-        font-size: 18px;
-    }
-    
-    .naviMenu button img {
-        width: 15px;
-        height: 15px;
-    }
-
-    .carousel-caption h2 {
-        font-size: 12px;
-    }
-    
-    .homeBody {
-        padding-top: 18px;
-        padding-bottom: 6px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-    .titleSection {
-        font-size: 15px;
-    }
-    
-    .bottomHome {
-        padding-top: 25px;
-        padding-bottom: 62px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-    .topElement {
-        margin-top: 12px;
-        padding-top: 6px;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 6px;
-    }
-    
-    .onlyElement {
-        padding-top: 12px;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 62px;
-    }
-    
-    .generalNews {
-        margin-top: 7px;
-    }
-    
-    .newsContainer .image-text {
-        padding: 2px; 
-    }
-
-    .cosmereSagas {
-        margin-top: 12px;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-    
-    .textareaCarousel {
-        line-height: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 10px;
-    }
-    
-    .textMain {
-        font-size: 8px;
-    }
-    
-    .body {
-        padding-top: 6px;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 6px;
-    }
-    
-    .bottomElement {
-        padding-top: 6px;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 62px;
-    }
-    
-    .bottomElement h2 {
-        margin-top: 12px;
-    }
-    
-    .readOrder {
-        margin-top: 12px;
-    }
-    
-    .bottomMargin {
-        margin-bottom: 20px;
-    }
-    
-    .titleSpace {
-        padding-bottom: 7px;
-    }
-    
-    .lastElement {
-        margin-bottom: 62px;
-    }
-    
-    .aboutUs {
-        padding-top: 12px;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 18px;
-        margin-top: 12px;
-        margin-left: 25px;
-        margin-right: 25px;
-        border-radius: 3px;
-    }
-    
-    form {
-        font-size: 5px;
-        padding: 5px;
-        padding-bottom: 8px;
-    }
-    
-    form h2 {
-        font-size: 12px;
-    }
-    
-    .formInput {
-        margin-top: 2px;
-        font-size: 10px;
-    }
-    
-    .formSend {
-        margin-top: 2px;
-        font-size: 5px;
-    }
-    
-    footer {
-        font-size: 8px;
-        padding-top: 12px;
-        padding-right: 7px;
-        padding-bottom: 3px;
-    }
-    
-    footer h3 {
-        font-size: 12px;
-    }
-    
-    .socialLogo {
-        width: 10px;
-        height: 10px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

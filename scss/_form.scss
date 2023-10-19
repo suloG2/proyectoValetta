@@ -1,0 +1,42 @@
+form {
+    margin: auto;
+    font-size: 22px;
+    border: 5px solid black;
+    background-color: $darkerblue;
+    width: 97%;
+    padding: 20px;
+    padding-bottom: 35px;
+    border-radius: 30px;
+        h2 {    
+            text-transform: uppercase;
+            color: whitesmoke;
+            text-align: center;
+            font-family: $kanitfont;
+            font-size: 50px;}
+}
+
+.formInput {
+    width: 100%;
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    border-radius: 2px;
+    font-family: $kanitfont;
+    resize: none;
+}
+
+.formSend {
+    border: $regularblue solid 3px;
+    border-radius: 10px;
+    width: 15%;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: goldenrod;
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+    font-family: $kanitfont;
+}

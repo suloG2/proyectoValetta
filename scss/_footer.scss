@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D0D1A;
+    color: whitesmoke;
+    text-align: right;
+    font-size: 18px;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    font-family: $kanitfont;
+        h3 {
+            @include regular-text;
+            text-align: inherit;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+}
+
+.socialLogo {
+    width: 20px;
+    height: 20px;
+}

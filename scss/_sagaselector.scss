@@ -1,0 +1,21 @@
+.sagaSelector {
+    font-size: 30px;
+    text-align: center;
+    background-color: $darkerblue;
+    border-color: $darkerblue;
+}
+
+.sagaSelectItem {
+    background-color: $darkerblue;
+    font-size: 20px;
+    font-family: $kanitfont;
+        li {
+            a{
+                color: whitesmoke;
+                text-align: center;
+                    &:active {
+                        background-color: goldenrod;
+                    } 
+            }
+        }
+}
