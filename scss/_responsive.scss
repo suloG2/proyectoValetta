@@ -152,6 +152,16 @@
     }
 }
 
+@media screen and (max-width: 690px) {
+    .sagaSelector {
+        font-size: 12px;
+    }
+
+    .sagaSelectItem {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     header {
         padding: 2px 3px 2px 3px;
@@ -309,5 +319,15 @@
     .socialLogo {
         width: 15px;
         height: 15px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .sagaSelector {
+        font-size: 7px;
+    }
+
+    .sagaSelectItem {
+        font-size: 8px;
     }
 }
