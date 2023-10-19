@@ -1,0 +1,299 @@
+@media screen and (max-width: 1080px) {
+    .sagaSelector {
+        font-size: 15px;
+    }
+    
+    .sagaSelectItem {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header {
+        padding: 3px 5px 3px 5px;
+        gap: 7px;
+    }
+
+    .mainLogo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .titleMain {
+        font-size: 36px;
+    }
+
+    .naviMenu {
+            button {
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+            }
+    }
+
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    
+    .homeBody {
+        color: whitesmoke;
+        padding-top: 37px;
+        padding-bottom: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .bottomHome {
+        padding-top: 50px;
+        padding-bottom: 125px;
+    }
+
+    .onlyElement {
+        padding-top: 25px;
+        padding-left: 38px;
+        padding-right: 38px;
+        padding-bottom: 125px;
+    }
+
+    .topElement {
+        margin-top: 25px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .generalNews {
+        margin-top: 15px;
+    }
+
+    .newsContainer .image-text {
+        padding: 5px; 
+    }
+
+    .cosmereSagas {
+        margin-top: 15px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .textareaCarousel {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .sagaSelector {
+        font-size: 15px;
+    }
+
+    .sagaSelectItem {
+        font-size: 10px;
+    }
+
+    .bottomElement {
+        padding-top: 13px;
+        padding-bottom: 125px;
+            h2 {
+                margin-top: 13px;
+            }
+    }
+
+    .readOrder {
+        margin-top: 15px;
+    }
+
+    .bottomMargin {
+        margin-bottom: 40px;
+    }
+
+    .titleSpace {
+        padding-bottom: 15px;
+    }
+    
+    .lastElement {
+        margin-bottom: 125px;
+    }
+
+    .aboutUs {
+        padding-top: 25px;
+        padding-bottom: 38px;
+        margin-top: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+
+    form {
+        padding: 10px;
+        padding-bottom: 18px;
+        border-radius: 15px;
+    }
+
+    .formInput {
+        margin-top: 5px;
+    }
+
+    .formSend {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        padding: 2px 3px 2px 3px;
+        gap: 4px;
+    }
+
+    .mainLogo {
+        width: 15px;
+        height: 15px;
+    }
+
+    .titleMain {
+        font-size: 18px;
+    }
+
+    .naviMenu {
+            button {
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+            }
+    }
+
+    .carousel-caption h2 {
+        font-size: 18px;
+    }
+    
+    .homeBody {
+        color: whitesmoke;
+        padding-top: 19px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .titleSection {
+        font-size: 31px;
+    }
+
+    .bottomHome {
+        padding-top: 10px;
+        padding-bottom: 63px;
+    }
+
+    .onlyElement {
+        padding-top: 13px;
+        padding-left: 18px;
+        padding-right: 19px;
+        padding-bottom: 63px;
+    }
+
+    .topElement {
+        margin-top: 18px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .generalNews {
+        margin-top: 8px;
+    }
+
+    .newsContainer .image-text {
+        padding: 3px; 
+    }
+
+    .cosmereSagas {
+        margin-top: 8px;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .textArea {
+            p{
+                font-size: 18px;
+            }
+    }
+
+    .textareaCarousel {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .sagaSelector {
+        font-size: 10px;
+    }
+
+    .sagaSelectItem {
+        font-size: 10px;
+    }
+
+    .bottomElement {
+        padding-top: 7px;
+        padding-bottom: 63px;
+            h2 {
+                margin-top: 7px;
+            }
+    }
+
+    .readOrder {
+        margin-top: 8px;
+    }
+
+    .bottomMargin {
+        margin-bottom: 20px;
+    }
+
+    .titleSpace {
+        padding-bottom: 8px;
+    }
+    
+    .lastElement {
+        margin-bottom: 63px;
+    }
+
+    .aboutUs {
+        padding-top: 18px;
+        padding-bottom: 19px;
+        margin-top: 18px;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-radius: 4px;
+    }
+
+    form {
+        padding: 5px;
+        padding-bottom: 9px;
+        border-radius: 8px;
+            h2 {    
+                font-size: 25px;
+            }
+    }
+
+    .formInput {
+        margin-top: 3px;
+    }
+
+    .formSend {
+        margin-top: 3px;
+        font-size: 11px;
+    }
+
+    footer {
+        font-size: 15px;
+            h3 {
+                font-size: 18px;
+            }
+    }
+    
+    .socialLogo {
+        width: 15px;
+        height: 15px;
+    }
+}
