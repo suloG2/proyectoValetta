@@ -15,20 +15,34 @@
 
 <body>
     <header>
-        <a href="./index.html"><img src="./assets/img/logo_color.png" alt="Logo" class="mainLogo"></nav></a>
-        <h1><a href="./index.html" class="titleMain">Sanderlanche.UY</a></h1>
-        <nav class="naviMenu"> <!--Nav menu desplegable a partir de la foto-->
-            <button type="button" class="btn btn-primary" data-bs-toggle="dropdown">
-                <img src="./assets/img/dropdownmenu.png">
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="./pages/novedades.html">Novedades</a>
-                <a class="dropdown-item" href="./pages/cosmere.html">Cosmere</a>
-                <a class="dropdown-item" href="./pages/otros_trabajos.html">Otros Trabajos</a>
-                <a class="dropdown-item" href="./pages/sobre_nosotros.html">Sobre Nosotros</a>
-            </div>
-        </nav>
+        <div class="flexrowNav">
+            <a href="./index.html"><img src="./assets/img/logo_color.png" alt="Logo" class="mainLogo"></nav></a>
+            <h1><a href="./index.html" class="titleMain">Sanderlanche.UY</a></h1>
+            <nav class="naviMenu"> <!--Nav menu desplegable a partir de la foto-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="dropdown">
+                    <img src="./assets/img/dropdownmenu.png">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./pages/novedades.html">Novedades</a>
+                    <a class="dropdown-item" href="./pages/cosmere.html">Cosmere</a>
+                    <a class="dropdown-item" href="./pages/otros_trabajos.html">Otros Trabajos</a>
+                    <a class="dropdown-item" href="./pages/sobre_nosotros.html">Sobre Nosotros</a>
+                </div>
+            </nav>
+        </div>
     </header>
+    <nav class="naviMenuDESKTOP">
+        <div class="container containerDesktopNav">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-2"><a href="./pages/novedades.html">Novedades</a></div>
+                <div class="col-md-2"><a href="./pages/cosmere.html">Cosmere</a></div>
+                <div class="col-md-2"><a href="./pages/otros_trabajos.html">Otros Trabajos</a></div>
+                <div class="col-md-2"><a href="./pages/sobre_nosotros.html">Sobre Nosotros</a></div>
+            </div>
+        </div>
+    </nav>    
+
     
     <main>
         <div id="newsDiv" class="carousel slide">

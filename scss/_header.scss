@@ -1,5 +1,4 @@
 header {
-    display: flex;
     background-color: $darkerblue;
     color: whitesmoke;
     text-decoration: none;
@@ -7,11 +6,18 @@ header {
     border-width: medium;
     border-color: black;
     padding: 5px 10px 5px 10px;
-    gap: 15px;
     position: sticky;
     top: 0px;
     align-items: center;
     z-index: 5000;
+}
+
+.flexrowNav {
+    display: flex;
+    gap: 6px;
+        a {
+            margin-top: 8px;
+        }
 }
 
 .mainLogo {
@@ -36,6 +42,7 @@ header {
             background-color: inherit;
             border: none;
             border-style: solid;
+            margin-top: 15px;
             border-width: 2px;
             border-radius: 10px;
             border-color: $darkerblue;
@@ -61,6 +68,64 @@ header {
                         }
                 }
         }
+}
+
+.containerDesktopNav {
+    margin-right: 0px;
+    padding-bottom: 15px;
+}
+
+.naviMenuDESKTOP {
+    display: none;
+    visibility: hidden;
+    text-align: center;
+    padding-right: 10px;
+    background-color: black;
+        div {
+            div{
+                margin-top: 0px;
+                padding-top: 0px;
+                margin-top: 5px;
+                &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+                    border: 3px whitesmoke solid;
+                    background-color: $darkerblue;
+                    &:hover {
+                        background-color: $regularblue;
+                    }
+                }
+                a {
+                    @include regular-text;
+                    font-size: 18px;
+                    text-decoration: none;
+                    &:hover {
+                        color: goldenrod;
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    .flexrowNav {
+        gap: 15px;
+            a {
+                margin-top: 25px;
+            }
+    }
+
+    .header {
+        border-color: $darkerblue;
+    }
+
+    .naviMenu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .naviMenuDESKTOP {
+        display: flex;
+        visibility: visible;
+    }
 }
 
 .btn-primary {

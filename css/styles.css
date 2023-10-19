@@ -8,7 +8,6 @@ body {
 }
 
 header {
-  display: flex;
   background-color: #0D0D1A;
   color: whitesmoke;
   text-decoration: none;
@@ -16,11 +15,18 @@ header {
   border-width: medium;
   border-color: black;
   padding: 5px 10px 5px 10px;
-  gap: 15px;
   position: sticky;
   top: 0px;
   align-items: center;
   z-index: 5000;
+}
+
+.flexrowNav {
+  display: flex;
+  gap: 6px;
+}
+.flexrowNav a {
+  margin-top: 8px;
 }
 
 .mainLogo {
@@ -52,6 +58,7 @@ header {
   background-color: inherit;
   border: none;
   border-style: solid;
+  margin-top: 15px;
   border-width: 2px;
   border-radius: 10px;
   border-color: #0D0D1A;
@@ -76,6 +83,62 @@ header {
   background-color: goldenrod;
 }
 
+.containerDesktopNav {
+  margin-right: 0px;
+  padding-bottom: 15px;
+}
+
+.naviMenuDESKTOP {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  padding-right: 10px;
+  background-color: black;
+}
+.naviMenuDESKTOP div div {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-top: 5px;
+}
+.naviMenuDESKTOP div div:nth-child(2), .naviMenuDESKTOP div div:nth-child(3), .naviMenuDESKTOP div div:nth-child(4), .naviMenuDESKTOP div div:nth-child(5) {
+  border: 3px whitesmoke solid;
+  background-color: #0D0D1A;
+}
+.naviMenuDESKTOP div div:nth-child(2):hover, .naviMenuDESKTOP div div:nth-child(3):hover, .naviMenuDESKTOP div div:nth-child(4):hover, .naviMenuDESKTOP div div:nth-child(5):hover {
+  background-color: #1E2C3E;
+}
+.naviMenuDESKTOP div div a {
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+.naviMenuDESKTOP div div a:hover {
+  color: goldenrod;
+}
+
+@media screen and (min-width: 1024px) {
+  .flexrowNav {
+    gap: 15px;
+  }
+  .flexrowNav a {
+    margin-top: 25px;
+  }
+  .header {
+    border-color: #0D0D1A;
+  }
+  .naviMenu {
+    display: none;
+    visibility: hidden;
+  }
+  .naviMenuDESKTOP {
+    display: flex;
+    visibility: visible;
+  }
+}
 .btn-primary {
   --bs-btn-active-bg: inherit;
   --bs-btn-active-border-color: inherit;
@@ -393,6 +456,14 @@ footer a {
   .sagaSelectItem {
     font-size: 10px;
   }
+  .mainLogo {
+    margin-top: 3px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainLogo {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 770px) {
   header {
@@ -402,9 +473,13 @@ footer a {
   .mainLogo {
     width: 30px;
     height: 30px;
+    margin-top: 5px;
   }
   .titleMain {
     font-size: 36px;
+  }
+  .naviMenu button {
+    margin-top: 8px;
   }
   .naviMenu button img {
     width: 30px;
@@ -510,6 +585,9 @@ footer a {
   }
   .titleMain {
     font-size: 25px;
+  }
+  .naviMenu button {
+    margin-top: 3px;
   }
   .naviMenu button img {
     width: 25px;

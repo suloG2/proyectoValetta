@@ -6,6 +6,16 @@
     .sagaSelectItem {
         font-size: 10px;
     }
+
+    .mainLogo {
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainLogo {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -17,6 +27,7 @@
     .mainLogo {
         width: 30px;
         height: 30px;
+        margin-top: 5px;
     }
 
     .titleMain {
@@ -25,6 +36,7 @@
 
     .naviMenu {
             button {
+                margin-top: 8px;
                     img{
                         width: 30px;
                         height: 30px;
@@ -158,6 +170,7 @@
 
     .naviMenu {
             button {
+                margin-top: 3px;
                     img{
                         width: 25px;
                         height: 25px;
