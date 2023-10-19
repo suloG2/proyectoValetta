@@ -3,25 +3,38 @@ footer {
     flex-direction: column;
     background-color: #0D0D1A;
     color: whitesmoke;
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     border-style: solid;
     border-width: medium;
     border-color: black;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 15px;
+    padding-top: 75px;
+    padding-bottom: 100px;
     font-family: $kanitfont;
-        h3 {
-            @include regular-text;
-            text-align: inherit;
-        }
-        p {
-            margin-bottom: 0px;
-        }
-        a {
-            color: inherit;
-            text-decoration: inherit;
+        div {
+            div {
+                div {
+                    h3 {
+                        @include regular-text;
+                        text-align: inherit;
+                    }
+                    p {
+                        margin-bottom: 0px;
+                            &:hover {
+                                color: goldenrod;
+                                text-decoration: underline whitesmoke 3px;
+                            }
+                    }
+                    a {
+                        color: inherit;
+                        text-decoration: inherit;
+                            &:hover {
+                                color: goldenrod;
+                                text-decoration: underline whitesmoke 3px;
+                            }
+                    }
+                }
+            }
         }
 }
 

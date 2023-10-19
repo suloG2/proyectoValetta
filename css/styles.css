@@ -345,7 +345,7 @@ header {
   transition: transform 0.2s;
 }
 .readOrder:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .bottomMargin {
@@ -426,17 +426,16 @@ footer {
   flex-direction: column;
   background-color: #0D0D1A;
   color: whitesmoke;
-  text-align: right;
+  text-align: center;
   font-size: 18px;
   border-style: solid;
   border-width: medium;
   border-color: black;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 15px;
+  padding-top: 75px;
+  padding-bottom: 100px;
   font-family: "Kanit", sans-serif;
 }
-footer h3 {
+footer div div div h3 {
   color: whitesmoke;
   font-family: "Kanit", sans-serif;
   line-height: 1.5;
@@ -444,12 +443,20 @@ footer h3 {
   text-align: center;
   text-align: inherit;
 }
-footer p {
+footer div div div p {
   margin-bottom: 0px;
 }
-footer a {
+footer div div div p:hover {
+  color: goldenrod;
+  text-decoration: underline whitesmoke 3px;
+}
+footer div div div a {
   color: inherit;
   text-decoration: inherit;
+}
+footer div div div a:hover {
+  color: goldenrod;
+  text-decoration: underline whitesmoke 3px;
 }
 
 .socialLogo {
