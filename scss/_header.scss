@@ -56,9 +56,55 @@ header {
         }
 }
 
-@media screen and (max-width: 1020px) {
+.mobileNav {
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    visibility: hidden;
+        button {
+            background-color: inherit;
+            border: none;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: $darkerblue;
+                &:hover {
+                    background-color: inherit;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-radius: 10px;
+                    border-color: whitesmoke;
+                }
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+        }
+        div {
+            a{
+                background-color: whitesmoke;
+                text-align: right;
+                --bs-dropdown-link-active-bg: goldenrod;
+                    &:hover {
+                        background-color: goldenrod;
+                    }
+            }
+    }
+}
+
+.btn-primary {
+    --bs-btn-active-bg: inherit;
+    --bs-btn-active-border-color: inherit;
+}
+
+@media screen and (max-width: 768px) {
     .desktopNav {
         display: none;
         visibility: hidden;
+    }
+    .mobileNav {
+        display: flex;
+        visibility: visible;
     }
 }
