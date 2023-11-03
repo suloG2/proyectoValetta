@@ -188,6 +188,27 @@ header {
   transform: scale(1.02);
 }
 
+.bookCarouselMB {
+  visibility: hidden;
+  display: none;
+  background-color: #0D0D1A;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color: #0D0D1A;
+  align-items: center;
+}
+.bookCarouselMB img {
+  height: 56vw;
+  width: 50vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  transition: transform 0.2s;
+}
+.bookCarouselMB img:hover {
+  transform: scale(1.02);
+}
+
 .textareaCarousel {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -200,6 +221,16 @@ header {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .bookCarousel {
+    display: none;
+    visibility: hidden;
+  }
+  .bookCarouselMB {
+    display: inherit;
+    visibility: visible;
+  }
+}
 .newsContainer {
   display: flex;
   justify-content: center;
