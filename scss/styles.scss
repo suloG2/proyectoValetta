@@ -1,180 +1,18 @@
-$darkerblue: #0D0D1A;
-$regularblue: #1E2C3E;
-$lighterblue: #2f415a;
-$kanitfont : 'Kanit', sans-serif;
-
-@mixin regular-text {
-    color: whitesmoke;
-    font-family: $kanitfont;
-    line-height: 1.5;
-    font-size: 22px;
-    text-align: center;
-}
-
-@mixin title-text {
-    color: goldenrod;
-    font-family: $kanitfont;
-    line-height: 1.5;
-    font-size: 62px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    background-color: $regularblue;
-}
+@import "general";
 
 @import "header";
 
-.carousel-caption h2 {
-    color: whitesmoke;
-    font-size: 50px;
-}
-
-.homeBody {
-    color: whitesmoke;
-    padding-top: 75px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.titleSection {
-    @include title-text;
-}
+@import "homenews";
 
 @import "bookcarousel";
 
-.bottomHome {
-    @extend .homeBody;
-    padding-top: 100px;
-    padding-bottom: 250px;
-}
-
-.onlyElement {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 250px;
-    color: whitesmoke;
-}
-
-.topElement {
-    @extend .onlyElement;
-    margin-top: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.generalNews {
-    background-color: $darkerblue;
-    border: solid;
-    border-width: 4px;
-    border-color: whitesmoke;
-    border-radius: 4vw;
-    margin-top: 30px;
-}
-
-.middleGround {
-    height: 2.2vw;
-}
-
 @import "newscontainer";
-
-.cosmereSagas {
-    border-style: solid;
-    border-color: whitesmoke;
-    background-color: $lighterblue;
-    border-width: 3px;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.textArea {
-    margin-right: 15vw;
-    margin-left: 15vw;
-        p{
-            text-align: center;
-            @include regular-text;
-        }
-}
-
-.whatisCosmere {
-    background-image: url(../assets/img/backCosmere.jpg);
-    border: none;
-    border-radius: 15px;
-    border-width: 3px;
-}
-
-.textareaCarousel {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 15vw;
-    margin-left: 15vw;
-    @include regular-text;
-}
 
 @import "sagaselector";
 
-.bottomElement {
-    @extend .onlyElement;
-    padding-top: 25px;
-    padding-bottom: 250px;
-        h2 {
-            margin-top: 50px;
-        }
-}
+@import "readorder";
 
-.readOrder {
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
-    border: solid whitesmoke;
-    border-width: 3px;
-    border-radius: 10px;
-    transition: transform .2s;
-        &:hover {
-            transform: scale(1.07);
-        }
-}
-
-.bottomMargin {
-    margin-bottom: 80px;
-}
-
-.titleSpace {
-    padding-bottom: 30px;
-}
-
-.lastElement {
-    margin-bottom: 250px;
-}
-
-.aboutUs {
-    @extend .onlyElement;
-    background-image: url(../assets/img/team3.jpg);
-    background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 75px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-weight: 400;
-    @include regular-text;
-}
+@import "aboutus";
 
 @import "form";
 

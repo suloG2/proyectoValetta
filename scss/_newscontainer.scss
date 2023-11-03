@@ -1,3 +1,5 @@
+$darkerblue: #0D0D1A;
+
 .newsContainer {
     display: flex;
     justify-content: center;
@@ -38,4 +40,17 @@
     padding: 10px; 
     border-radius: 5px;
     transition: opacity 0.3s;
+}
+
+.generalNews {
+    background-color: $darkerblue;
+    border: solid;
+    border-width: 4px;
+    border-color: whitesmoke;
+    border-radius: 4vw;
+    margin-top: 30px;
+}
+
+.middleGround {
+    height: 2.2vw;
 }

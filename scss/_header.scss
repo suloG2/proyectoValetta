@@ -1,3 +1,25 @@
+$darkerblue: #0D0D1A;
+$regularblue: #1E2C3E;
+$kanitfont : 'Kanit', sans-serif;
+
+@mixin regular-text {
+    color: whitesmoke;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 22px;
+    text-align: center;
+}
+
+@mixin title-text {
+    color: goldenrod;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 62px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 header {
     background-color: $darkerblue;
     color: whitesmoke;

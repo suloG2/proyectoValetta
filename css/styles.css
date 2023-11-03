@@ -7,6 +7,63 @@ body {
   background-color: #1E2C3E;
 }
 
+.homeBody, .bottomHome {
+  color: whitesmoke;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.titleSection {
+  color: goldenrod;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 62px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.bottomHome {
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+
+.onlyElement, .aboutUs, .bottomElement, .topElement {
+  padding-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 250px;
+  color: whitesmoke;
+}
+
+.topElement {
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.bottomElement {
+  padding-top: 25px;
+  padding-bottom: 250px;
+}
+.bottomElement h2 {
+  margin-top: 50px;
+}
+
+.bottomMargin {
+  margin-bottom: 80px;
+}
+
+.titleSpace {
+  padding-bottom: 30px;
+}
+
+.lastElement {
+  margin-bottom: 250px;
+}
+
 header {
   background-color: #0D0D1A;
   color: whitesmoke;
@@ -149,24 +206,6 @@ header {
   font-size: 50px;
 }
 
-.homeBody, .bottomHome {
-  color: whitesmoke;
-  padding-top: 75px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.titleSection {
-  color: goldenrod;
-  font-family: "Kanit", sans-serif;
-  line-height: 1.5;
-  font-size: 62px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
 .bookCarousel {
   background-color: #0D0D1A;
   border-style: solid;
@@ -186,36 +225,16 @@ header {
   transform: scale(1.02);
 }
 
-.bottomHome {
-  padding-top: 100px;
-  padding-bottom: 250px;
-}
-
-.onlyElement, .aboutUs, .bottomElement, .topElement {
-  padding-top: 50px;
-  padding-left: 75px;
-  padding-right: 75px;
-  padding-bottom: 250px;
+.textareaCarousel {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 15vw;
+  margin-left: 15vw;
   color: whitesmoke;
-}
-
-.topElement {
-  margin-top: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.generalNews {
-  background-color: #0D0D1A;
-  border: solid;
-  border-width: 4px;
-  border-color: whitesmoke;
-  border-radius: 4vw;
-  margin-top: 30px;
-}
-
-.middleGround {
-  height: 2.2vw;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
 }
 
 .newsContainer {
@@ -260,6 +279,19 @@ header {
   transition: opacity 0.3s;
 }
 
+.generalNews {
+  background-color: #0D0D1A;
+  border: solid;
+  border-width: 4px;
+  border-color: whitesmoke;
+  border-radius: 4vw;
+  margin-top: 30px;
+}
+
+.middleGround {
+  height: 2.2vw;
+}
+
 .cosmereSagas {
   border-style: solid;
   border-color: whitesmoke;
@@ -291,18 +323,7 @@ header {
   border: none;
   border-radius: 15px;
   border-width: 3px;
-}
-
-.textareaCarousel {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 15vw;
-  margin-left: 15vw;
-  color: whitesmoke;
-  font-family: "Kanit", sans-serif;
-  line-height: 1.5;
-  font-size: 22px;
-  text-align: center;
+  padding-bottom: 75px;
 }
 
 .sagaSelector {
@@ -325,14 +346,6 @@ header {
   background-color: goldenrod;
 }
 
-.bottomElement {
-  padding-top: 25px;
-  padding-bottom: 250px;
-}
-.bottomElement h2 {
-  margin-top: 50px;
-}
-
 .readOrder {
   margin-top: 30px;
   display: block;
@@ -346,18 +359,6 @@ header {
 }
 .readOrder:hover {
   transform: scale(1.07);
-}
-
-.bottomMargin {
-  margin-bottom: 80px;
-}
-
-.titleSpace {
-  padding-bottom: 30px;
-}
-
-.lastElement {
-  margin-bottom: 250px;
 }
 
 .aboutUs {

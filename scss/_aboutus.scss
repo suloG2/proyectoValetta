@@ -1,0 +1,23 @@
+$kanitfont : 'Kanit', sans-serif;
+
+@mixin regular-text {
+    color: whitesmoke;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 22px;
+    text-align: center;
+}
+
+.aboutUs {
+    @extend .onlyElement;
+    background-image: url(../assets/img/team3.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-weight: 400;
+    @include regular-text;
+}

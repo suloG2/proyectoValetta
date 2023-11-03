@@ -1,0 +1,83 @@
+$regularblue: #1E2C3E;
+$kanitfont : 'Kanit', sans-serif;
+
+@mixin regular-text {
+    color: whitesmoke;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 22px;
+    text-align: center;
+}
+
+@mixin title-text {
+    color: goldenrod;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 62px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $regularblue;
+}
+
+.homeBody {
+    color: whitesmoke;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titleSection {
+    @include title-text;
+}
+
+.bottomHome {
+    @extend .homeBody;
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+
+.onlyElement {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 250px;
+    color: whitesmoke;
+}
+
+.topElement {
+    @extend .onlyElement;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.bottomElement {
+    @extend .onlyElement;
+    padding-top: 25px;
+    padding-bottom: 250px;
+        h2 {
+            margin-top: 50px;
+        }
+}
+
+.bottomMargin {
+    margin-bottom: 80px;
+}
+
+.titleSpace {
+    padding-bottom: 30px;
+}
+
+.lastElement {
+    margin-bottom: 250px;
+}

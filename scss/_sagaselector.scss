@@ -1,3 +1,45 @@
+$darkerblue: #0D0D1A;
+$lighterblue: #2f415a;
+$kanitfont : 'Kanit', sans-serif;
+
+@mixin regular-text {
+    color: whitesmoke;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 22px;
+    text-align: center;
+}
+
+.cosmereSagas {
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color: $lighterblue;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textArea {
+    margin-right: 15vw;
+    margin-left: 15vw;
+        p{
+            text-align: center;
+            @include regular-text;
+        }
+}
+
+.whatisCosmere {
+    background-image: url(../assets/img/backCosmere.jpg);
+    border: none;
+    border-radius: 15px;
+    border-width: 3px;
+    padding-bottom: 75px;
+}
+
 .sagaSelector {
     font-size: 30px;
     text-align: center;

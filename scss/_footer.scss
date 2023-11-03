@@ -1,3 +1,13 @@
+$kanitfont : 'Kanit', sans-serif;
+
+@mixin regular-text {
+    color: whitesmoke;
+    font-family: $kanitfont;
+    line-height: 1.5;
+    font-size: 22px;
+    text-align: center;
+}
+
 footer {
     display: flex;
     flex-direction: column;
