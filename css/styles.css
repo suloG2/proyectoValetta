@@ -66,141 +66,60 @@ body {
 
 header {
   background-color: #0D0D1A;
-  color: whitesmoke;
-  text-decoration: none;
-  border-bottom-style: solid;
-  border-width: medium;
-  border-color: black;
-  padding: 5px 10px 5px 10px;
   position: sticky;
   top: 0px;
-  align-items: center;
-  z-index: 5000;
+  z-index: 500;
 }
 
 .flexrowNav {
   display: flex;
-  gap: 6px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  gap: 10px;
 }
-.flexrowNav a {
-  margin-top: 8px;
-}
-
-.mainLogo {
+.flexrowNav a img {
   width: 60px;
   height: 60px;
 }
-
-.titleMain {
-  color: goldenrod;
-  font-family: "Kanit", sans-serif;
-  line-height: 1.5;
-  font-size: 62px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: whitesmoke;
-  font-size: 72px;
+.flexrowNav h1 a {
   text-decoration: none;
-  font-weight: 400;
-  text-transform: capitalize;
-}
-
-.naviMenu {
-  text-align: right;
-  margin-right: 0px;
-  margin-left: auto;
-}
-.naviMenu button {
-  background-color: inherit;
-  border: none;
-  border-style: solid;
-  margin-top: 15px;
-  border-width: 2px;
-  border-radius: 10px;
-  border-color: #0D0D1A;
-}
-.naviMenu button:hover {
-  background-color: inherit;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 10px;
-  border-color: whitesmoke;
-}
-.naviMenu button img {
-  width: 60px;
-  height: 60px;
-}
-.naviMenu div a {
-  background-color: whitesmoke;
-  text-align: right;
-  --bs-dropdown-link-active-bg: goldenrod;
-}
-.naviMenu div a:hover {
-  background-color: goldenrod;
-}
-
-.containerDesktopNav {
-  margin-right: 0px;
-  padding-bottom: 15px;
-}
-
-.naviMenuDESKTOP {
-  display: none;
-  visibility: hidden;
-  text-align: center;
-  padding-right: 10px;
-  background-color: black;
-}
-.naviMenuDESKTOP div div {
-  margin-top: 0px;
-  padding-top: 0px;
-  margin-top: 5px;
-}
-.naviMenuDESKTOP div div:nth-child(2), .naviMenuDESKTOP div div:nth-child(3), .naviMenuDESKTOP div div:nth-child(4), .naviMenuDESKTOP div div:nth-child(5) {
-  border: 3px whitesmoke solid;
-  background-color: #0D0D1A;
-}
-.naviMenuDESKTOP div div:nth-child(2):hover, .naviMenuDESKTOP div div:nth-child(3):hover, .naviMenuDESKTOP div div:nth-child(4):hover, .naviMenuDESKTOP div div:nth-child(5):hover {
-  background-color: #1E2C3E;
-}
-.naviMenuDESKTOP div div a {
+  font: "Kanit", sans-serif;
+  font-size: 55px;
   color: whitesmoke;
-  font-family: "Kanit", sans-serif;
-  line-height: 1.5;
-  font-size: 22px;
-  text-align: center;
-  font-size: 18px;
-  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
-.naviMenuDESKTOP div div a:hover {
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.desktopNav div {
+  padding-top: 5px;
+  height: 40px;
+  width: 150px;
+  border-left: solid 2px gray;
+}
+.desktopNav div:nth-child(4) {
+  border-right: solid 2px gray;
+}
+.desktopNav div a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.desktopNav div a:hover {
   color: goldenrod;
 }
 
-@media screen and (min-width: 1024px) {
-  .flexrowNav {
-    gap: 15px;
-  }
-  .flexrowNav a {
-    margin-top: 25px;
-  }
-  .header {
-    border-color: #0D0D1A;
-  }
-  .naviMenu {
+@media screen and (max-width: 1020px) {
+  .desktopNav {
     display: none;
     visibility: hidden;
   }
-  .naviMenuDESKTOP {
-    display: flex;
-    visibility: visible;
-  }
 }
-.btn-primary {
-  --bs-btn-active-bg: inherit;
-  --bs-btn-active-border-color: inherit;
-}
-
 .carousel-caption h2 {
   color: whitesmoke;
   font-size: 50px;
@@ -482,25 +401,6 @@ footer div div div a:hover {
   }
 }
 @media screen and (max-width: 770px) {
-  header {
-    padding: 3px 5px 3px 5px;
-    gap: 7px;
-  }
-  .mainLogo {
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
-  }
-  .titleMain {
-    font-size: 36px;
-  }
-  .naviMenu button {
-    margin-top: 8px;
-  }
-  .naviMenu button img {
-    width: 30px;
-    height: 30px;
-  }
   .carousel-caption h2 {
     font-size: 25px;
   }

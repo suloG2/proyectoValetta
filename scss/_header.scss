@@ -2,155 +2,63 @@ $darkerblue: #0D0D1A;
 $regularblue: #1E2C3E;
 $kanitfont : 'Kanit', sans-serif;
 
-@mixin regular-text {
-    color: whitesmoke;
-    font-family: $kanitfont;
-    line-height: 1.5;
-    font-size: 22px;
-    text-align: center;
-}
-
-@mixin title-text {
-    color: goldenrod;
-    font-family: $kanitfont;
-    line-height: 1.5;
-    font-size: 62px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
 header {
     background-color: $darkerblue;
-    color: whitesmoke;
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-width: medium;
-    border-color: black;
-    padding: 5px 10px 5px 10px;
     position: sticky;
     top: 0px;
-    align-items: center;
-    z-index: 5000;
+    z-index: 500;
 }
 
 .flexrowNav {
     display: flex;
-    gap: 6px;
-        a {
-            margin-top: 8px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    gap: 10px;
+        a{
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        h1 {
+            a {
+                text-decoration: none;
+                font: $kanitfont;
+                font-size: 55px;
+                color: whitesmoke;
+                letter-spacing: 2px;
+                font-weight: 600;
+            }
         }
 }
 
-.mainLogo {
-    width: 60px;
-    height: 60px;
-}
-
-.titleMain {
-    @include title-text;
-    color: whitesmoke;
-    font-size: 72px;
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-
-.naviMenu {
-    text-align: right;
-    margin-right: 0px;
-    margin-left: auto;
-        button {
-            background-color: inherit;
-            border: none;
-            border-style: solid;
-            margin-top: 15px;
-            border-width: 2px;
-            border-radius: 10px;
-            border-color: $darkerblue;
-                &:hover {
-                    background-color: inherit;
-                    border-style: solid;
-                    border-width: 2px;
-                    border-radius: 10px;
-                    border-color: whitesmoke;
-                }
-                img{
-                    width: 60px;
-                    height: 60px;
-                }
-        }
+.desktopNav {
+    display: flex;
+    align-items: center;
+    text-align: center;
         div {
-                a{
-                    background-color: whitesmoke;
-                    text-align: right;
-                    --bs-dropdown-link-active-bg: goldenrod;
+            padding-top: 5px;
+            height: 40px;
+            width: 150px;
+            border-left: solid 2px gray;
+                &:nth-child(4) {
+                    border-right: solid 2px gray;
+                }
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-size: 20px;
                         &:hover {
-                            background-color: goldenrod;
+                            color: goldenrod;
                         }
                 }
         }
 }
 
-.containerDesktopNav {
-    margin-right: 0px;
-    padding-bottom: 15px;
-}
-
-.naviMenuDESKTOP {
-    display: none;
-    visibility: hidden;
-    text-align: center;
-    padding-right: 10px;
-    background-color: black;
-        div {
-            div{
-                margin-top: 0px;
-                padding-top: 0px;
-                margin-top: 5px;
-                &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
-                    border: 3px whitesmoke solid;
-                    background-color: $darkerblue;
-                    &:hover {
-                        background-color: $regularblue;
-                    }
-                }
-                a {
-                    @include regular-text;
-                    font-size: 18px;
-                    text-decoration: none;
-                    &:hover {
-                        color: goldenrod;
-                    }
-                }
-            }
-        }
-}
-
-@media screen and (min-width: 1024px) {
-    .flexrowNav {
-        gap: 15px;
-            a {
-                margin-top: 25px;
-            }
-    }
-
-    .header {
-        border-color: $darkerblue;
-    }
-
-    .naviMenu {
+@media screen and (max-width: 1020px) {
+    .desktopNav {
         display: none;
         visibility: hidden;
     }
-
-    .naviMenuDESKTOP {
-        display: flex;
-        visibility: visible;
-    }
-}
-
-.btn-primary {
-    --bs-btn-active-bg: inherit;
-    --bs-btn-active-border-color: inherit;
 }
