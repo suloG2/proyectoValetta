@@ -498,25 +498,6 @@ footer div div div a:hover {
   }
 }
 @media screen and (max-width: 550px) {
-  header {
-    padding: 2px 3px 2px 3px;
-    gap: 4px;
-  }
-  .mainLogo {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 7px;
-  }
-  .titleMain {
-    font-size: 25px;
-  }
-  .naviMenu button {
-    margin-top: 3px;
-  }
-  .naviMenu button img {
-    width: 25px;
-    height: 25px;
-  }
   .carousel-caption h2 {
     font-size: 18px;
   }
