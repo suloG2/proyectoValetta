@@ -6,6 +6,8 @@ Aquí podrás encontrar información general de cada universo, listados de libro
 ## ¿Donde puedo acceder a la página en linea?
 La página se encuentra hosteada en la siguiente dirección web: https://valettamartin.github.io/proyectoValetta/
 
+También se encuentra hosteada en el siguiente enlace: http://sanderlancheuy.kesug.com/?i=1 
+
 Los frameworks utilizados como referencia se encuentran en el siguiente enlace: https://app.moqups.com/8s54kzFPssrYtd58wbg9QPlioXgxbdBw/view/page/aea8ecab2
 
 # Información técnica
