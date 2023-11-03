@@ -8,7 +8,7 @@ La página se encuentra hosteada en la siguiente dirección web: https://valetta
 
 Los frameworks utilizados como referencia se encuentran en el siguiente enlace: https://app.moqups.com/8s54kzFPssrYtd58wbg9QPlioXgxbdBw/view/page/aea8ecab2
 
-# Información técnica:
+# Información técnica
 V1.0 - Trás adaptar los carruseles de libros a dispositivos moviles, se da por completada una primera versión de la pagina apta para la visualizacion desde cualquier dispositivo.
 
 Lenguajes utilizados - SCSS y CSS.
