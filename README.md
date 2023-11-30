@@ -13,9 +13,9 @@ Los frameworks utilizados como referencia se encuentran en el siguiente enlace: 
 # Información técnica
 V1.0 - Trás adaptar los carruseles de libros a dispositivos moviles, se da por completada una primera versión de la pagina apta para la visualizacion desde cualquier dispositivo.
 
-Lenguajes utilizados - SCSS y CSS.
+Lenguajes utilizados - HTML y CSS.
 
-Sitio web desarrollado con la ayuda de bootstrap.
+Sitio web desarrollado con la ayuda de bootstrap y SASS.
 
 ## Créditos correspondientes
 Desarrollada por Martín Valetta (@valettamartin en GitHub) para el curso de Desarrollo Web de Coderhouse.
